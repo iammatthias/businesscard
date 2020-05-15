@@ -52,13 +52,13 @@ fetch('https://iammatthias.com/feedPost.json', settings)
           labelWeb: chalk.white.bold('Web:'),
           labelCard: chalk.white.bold('Card:'),
           lastestPostSectionHeading: chalk.white.bold.underline('Latest Post'),
-          lastestPostTitle: chalk.white.italic(`${postTitle}`),
-          lastestPostURL: chalk.green(`${postURL}`),
+          lastestPostTitle: chalk.white.italic(`∵ ${postTitle}`),
+          lastestPostURL: chalk.green(`∵ ${postURL}`),
           lastestPhotoSectionHeading: chalk.white.bold.underline(
             'Latest Gallery'
           ),
-          lastestPhotoTitle: chalk.white.italic(`${photoTitle}`),
-          lastestPhotoURL: chalk.green(`${photoURL}`),
+          lastestPhotoTitle: chalk.white.italic(`∵ ${photoTitle}`),
+          lastestPhotoURL: chalk.green(`∵ ${photoURL}`),
         };
 
         // Actual strings we're going to output
