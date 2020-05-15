@@ -1,7 +1,7 @@
 {
   "name": "iammatthias",
-  "version": "0.3.0",
-  "description": "Matthias Jordan's (@iammatthias)'s business card",
+  "version": "0.4.0",
+  "description": "Matthias Jordan's (@iammatthias)'s npx business card",
   "main": "./bin/card.js",
   "bin": {
     "iammatthias": "./bin/card.js"
