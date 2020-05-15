@@ -1,6 +1,6 @@
 {
   "name": "iammatthias",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Matthias Jordan's (@iammatthias)'s business card",
   "main": "./bin/card.js",
   "bin": {
