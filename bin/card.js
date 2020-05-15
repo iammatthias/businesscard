@@ -52,13 +52,14 @@ fetch('https://iammatthias.com/feedPost.json', settings)
           labelWeb: chalk.white.bold('Web:'),
           labelCard: chalk.white.bold('Card:'),
           lastestPostSectionHeading: chalk.white.bold.underline('Latest Post'),
-          lastestPostTitle: chalk.white.italic(`∵ ${postTitle}`),
-          lastestPostURL: chalk.green(`∵ ${postURL}`),
+          lastestPostTitle: chalk.white.italic(`${postTitle}`),
+          lastestPostURL: chalk.green(`${postURL}`),
           lastestPhotoSectionHeading: chalk.white.bold.underline(
             'Latest Gallery'
           ),
-          lastestPhotoTitle: chalk.white.italic(`∵ ${photoTitle}`),
-          lastestPhotoURL: chalk.green(`∵ ${photoURL}`),
+          lastestPhotoTitle: chalk.white.italic(`${photoTitle}`),
+          lastestPhotoURL: chalk.green(`${photoURL}`),
+          list: chalk.white('∵'),
         };
 
         // Actual strings we're going to output
@@ -72,11 +73,11 @@ fetch('https://iammatthias.com/feedPost.json', settings)
         const listening = `${data.labelAppleMusic}  ${data.aMusic}`;
         const webing = `        ${data.labelWeb}  ${data.web}`;
         const lastestPostSection = `${data.lastestPostSectionHeading}`;
-        const lastestPostTitle = `${data.lastestPostTitle}`;
-        const lastestPostURL = `${data.lastestPostURL}`;
+        const lastestPostTitle = `${data.list} ${data.lastestPostTitle}`;
+        const lastestPostURL = `${data.list} ${data.lastestPostURL}`;
         const lastestPhotoSection = `${data.lastestPhotoSectionHeading}`;
-        const lastestPhotoTitle = `${data.lastestPhotoTitle}`;
-        const lastestPhotoURL = `${data.lastestPhotoURL}`;
+        const lastestPhotoTitle = `${data.list} ${data.lastestPhotoTitle}`;
+        const lastestPhotoURL = `${data.list} ${data.lastestPhotoURL}`;
         const carding = `${data.labelCard}  ${data.npx}`;
 
         // Put all our output together into a single variable so we can use boxen effectively
